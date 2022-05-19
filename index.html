@@ -9,14 +9,14 @@
 </head>
 <body>
     <!--header here with title and explanation-->
-<section class="container">
+<main class="container">
     <div id="starter">
         <h2>This is a quiz that will test you on a multitude of coding concepts and definitions</h2>
         <button id="startBtn">Start Quiz</button>
         <button id="StarterHighscore" onclick="Showhighscore()">High Score</button>
     </div>
  <!-- include start button and high score-->
-    <div id="quiz">
+    <section id="quiz">
         <div id="timer">Time remaining</div>
             <div id="questions">
                 <p>placeholder for questions</p>
@@ -25,10 +25,15 @@
             <button id="b" onclick="checkAnswer('b')">B</button>
             <button id="c" onclick="checkAnswer('c')">C</button>
             <button id="d" onclick="checkAnswer('d')">D</button>
-    </div>
+            <div id="results"></div>
+    </section>
 
  <!--add questions here with timer-->
- <div></div>
+ <section id="gameover">
+     <div id="finalscore"></div>
+     <input type="text" size="35" placeholder="Enter initals here to record highscore" name="initial" id="initials"/>
+     <button id="Submitscore">Submit your score</button>
+ </section>
 
  <!--submit score and view highscore portion goes here-->
 
@@ -42,7 +47,7 @@
 
 
 
-</section>
+</main>
 
 
 
