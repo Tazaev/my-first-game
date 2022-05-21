@@ -9,12 +9,16 @@
 </head>
 <body>
     <!--header here with title and explanation-->
-<main class="container">
-    <header id="starter">
-        <h1>This is a quiz that will test you on a multitude of coding concepts and definitions</h1>
-        <button id="startBtn">Start Quiz</button>
-        <button id="StarterHighscore" onclick="Showhighscore()">High Score</button>
+    <header>
+        <div class = "scores">
+            <a id="highscore-link">View hign scores</a>
+        </div>
+        <div id="timer" class="timer">
+            time: 60
+        </div>
     </header>
+
+
  <!-- include start button and high score-->
     <section id="quiz">
         <div id="timer">Time remaining</div>
@@ -56,5 +60,6 @@
 </main>
 
 <script src="assets/script.js"></script> 
+<script src="assets/qu-quest.js"></script>
 </body>
 </html>
