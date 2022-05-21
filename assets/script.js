@@ -68,3 +68,31 @@ function showQuestion(question) {
         answerButtonsEl.appendChild(button)
     })
 };
+// function for resetting questions
+function resetState() {
+    nextButton.classList.add("hide")
+    checkAnswerEl.classList.add("hide")
+    while (answerButtonsEl.firstChild) {
+        answerButtonsEl.removeChild
+            (answerButtonsEl.firstChild)
+    }
+};
+
+// Select answer function
+function selectAnswer(e) {
+    var selectedButton = e.target;
+    //console.dir(selectedButton);
+    var correct = selectedButton.dataset.correct;
+    checkAnswerEl.classList.remove("hide")
+    // Check if the answer is correct or wrong and then show text
+    if (correct) {
+        checkAnswerEl.innerHTML = "You got it right!";
+    } else {
+        checkAnswerEl.innerHTML = "Sorry that was not the correct answer.";
+        if (timeLeft <= 10) {
+            timeLeft = 0;
+        } else {
+            // If the aswer is wrong, deduct time by 10
+            timeLeft -= 10;
+        }
+    }
