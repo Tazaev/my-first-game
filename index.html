@@ -39,20 +39,19 @@
      </div>
      <h2 id="confirm-ans" class="correct-wrong hide"></h2>
      <div class="settings">
-         <button id="next-btn" class="next-btn hide"></button>
+         <button id="next-btn" class="next-btn hide">Next</button>
      </div>    
  </section>
 
  <!--submit score and view highscore portion goes here-->
- <section id="scoreblock">
-    <div id="highscore">
-        <div id="highscore-head">
-            <h2>player initails</h2>
-            <h2>player score</h2>
-        </div>
-        <div id="score-initals"></div>
-        <div id="player-score"></div>
-    </div>
+ <section id="scoreblock" class="hide">
+     <form id="submitform">
+         <h3>User-score</h3>
+         <label id="initals">Type initials here to save score</label>
+         <input type="text" id="initials-sect" placeholder="Type initials here" maxlength="3">
+         <button id="submit-btn">Submit</button>
+     </form>
+     
  </section>
 
 
