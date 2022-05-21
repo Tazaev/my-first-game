@@ -30,21 +30,55 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-.scores a{
-    color:blueviolet;
-}
+.scores a,
 .timer {
     font-size: 18px;
+}
+.scores a {
+    color:blueviolet;
     cursor: pointer;
-
 }
 
 .scores a:hover {
     color:rgb(57, 24, 88)
 }
 
+/* styling for first section in body*/
+.start-quiz {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+h2{
+    margin: 20px 0;
+  font-style: italic;
+  text-align: center;
+  color: rgb(150, 95, 201);
+  border-top: 1px solid rgb(150, 95, 201);
+  
+}
+
+/*buttons styling*/
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    width: auto;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: blueviolet;
+}
 
 
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+    grid-template-columns: repeat(2, auto);
+}
 
 
 
