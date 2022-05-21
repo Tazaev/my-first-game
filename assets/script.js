@@ -96,3 +96,44 @@ function selectAnswer(e) {
             timeLeft -= 10;
         }
     }
+    Array.from(answerButtonsEl.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove("hide")
+        checkAnswerEl.classList.remove("hide")
+    } else {
+        startButton.classList.remove("hide")
+        saveScore();
+    }
+};
+
+// Correct and wrong answers will display with their corresponding colors
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct");
+    } else {
+        element.classList.add("wrong");
+    }
+};
+
+
+function clearStatusClass(element) {
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
+};
+
+// function for saving the scores
+function saveScore() {
+    clearInterval(timerID);
+    timerEl.textContent = "Time: " + timeLeft;
+    setTimeout(function () {
+        //localStorage.setItem("scores", JSON.stringify(scores));
+        questionContainerEl.classList.add("hide");
+        document.getElementById("score-container").classList.remove("hide");
+        document.getElementById("your-score").textContent = "Your final score is " + timeLeft;
+
+    }, 2000)
+};
