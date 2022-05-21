@@ -5,8 +5,42 @@
 }
 
 :root{
-    background-color: aliceblue;
+    background-color: rgb(240, 242, 245);
     
+}
+/* styling for body of the quiz*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.3;
+    width: 50%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.middle {
+    text-align: center;
+}
+
+header {
+    margin: 22px 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scores a{
+    color:blueviolet;
+}
+.timer {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.scores a:hover {
+    color:rgb(57, 24, 88)
 }
 
 
@@ -19,4 +53,12 @@
 
 
 
+/* this will be applied to screens smaller than 575px */
+@media screen and (max-width: 575px) {
+    .btn-grid {
+      grid-template-columns: repeat(1, auto);
+      gap: 0;
+      margin: 0;
+    }
+  }
  

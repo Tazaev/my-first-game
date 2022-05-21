@@ -11,7 +11,7 @@
     <!--header here with title and explanation-->
     <header>
         <div class = "scores">
-            <a id="highscore-link">View hign scores</a>
+            <a id="highscore-link">View high scores</a>
         </div>
         <div id="timer" class="timer">
             time: 60
@@ -56,13 +56,19 @@
 
 
  <!--play again?-->
- <section id="endgamebutton">
-     <button id="playagain" onclick="replayquiz()">play again</button>
-     <!--reset score-->
-     <button id="resetscore" onclick="resetscore()">reset score</button>
+ <section id="highscores">
+     <div id="high-score">
+         <h2 class="middle">Score Board</h2>
+         <div id="highscore" class="scores-list"></div>
+     </div>
+     <div class="control">
+         <button id="restart-btn">Restart quiz</button>
+         <button id="clear-btn">Clear Score</button>
+     </div>
+     
  </section>
 
-</main>
+</body>
 
 <script src="assets/script.js"></script> 
 <script src="assets/qu-quest.js"></script>
