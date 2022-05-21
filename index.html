@@ -29,10 +29,18 @@
     </section>
 
  <!--add questions here with timer-->
- <section id="gameover">
-     <div id="finalscore"></div>
-     <input type="text" size="35" placeholder="Enter initals here to record highscore" name="initial" id="initials"/>
-     <button id="Submitscore">Submit your score</button>
+ <section id="que-container" class="hide">
+     <h1 id="question">Questions</h1>
+     <div id="ans-btn" class="btn-grid">
+         <button class="btn">Answer 1</button>
+         <button class="btn">Answer 2</button>
+         <button class="btn">Answer 3</button>
+         <button class="btn">Answer 4</button>
+     </div>
+     <h2 id="confirm-ans" class="correct-wrong hide"></h2>
+     <div class="settings">
+         <button id="next-btn" class="next-btn hide"></button>
+     </div>    
  </section>
 
  <!--submit score and view highscore portion goes here-->
@@ -46,6 +54,8 @@
         <div id="player-score"></div>
     </div>
  </section>
+
+
  <!--play again?-->
  <section id="endgamebutton">
      <button id="playagain" onclick="replayquiz()">play again</button>
