@@ -1,6 +1,6 @@
 //var quiz questions here
 
-var = Quizquestion = [
+var  Quizquestion = [
     {
         question: "Which of the below is the correct way to write a JavaScript array?", 
         answers: [
