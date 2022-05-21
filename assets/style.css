@@ -1,4 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     background-color: aliceblue;
     
 }
+
+.container {
+    width: 100vw;
+}
+
+
+
+
+
+
+
+
+p {
+    color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+
+}
+
+h2 {
+    font-family: 'Trebuchet MS';
+    font-size: smaller;
+}
+
+
+ 

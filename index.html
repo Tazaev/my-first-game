@@ -10,11 +10,11 @@
 <body>
     <!--header here with title and explanation-->
 <main class="container">
-    <div id="starter">
-        <h2>This is a quiz that will test you on a multitude of coding concepts and definitions</h2>
+    <header id="starter">
+        <h1>This is a quiz that will test you on a multitude of coding concepts and definitions</h1>
         <button id="startBtn">Start Quiz</button>
         <button id="StarterHighscore" onclick="Showhighscore()">High Score</button>
-    </div>
+    </header>
  <!-- include start button and high score-->
     <section id="quiz">
         <div id="timer">Time remaining</div>
@@ -36,38 +36,24 @@
  </section>
 
  <!--submit score and view highscore portion goes here-->
-
+ <section id="scoreblock">
+    <div id="highscore">
+        <div id="highscore-head">
+            <h2>player initails</h2>
+            <h2>player score</h2>
+        </div>
+        <div id="score-initals"></div>
+        <div id="player-score"></div>
+    </div>
+ </section>
  <!--play again?-->
-
-
-
-
-
-
-
-
+ <section id="endgamebutton">
+     <button id="playagain" onclick="replayquiz()">play again</button>
+     <!--reset score-->
+     <button id="resetscore" onclick="resetscore()">reset score</button>
+ </section>
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="assets/script.js"></script> 
 </body>
