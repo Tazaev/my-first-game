@@ -20,16 +20,12 @@
 
 
  <!-- include start button and high score-->
-    <section id="quiz">
-        <div id="timer">Time remaining</div>
-            <div id="questions">
-                <p>placeholder for questions</p>
-            </div>
-            <button id="a" onclick="checkAnswer('a')">A</button>
-            <button id="b" onclick="checkAnswer('b')">B</button>
-            <button id="c" onclick="checkAnswer('c')">C</button>
-            <button id="d" onclick="checkAnswer('d')">D</button>
-            <div id="results"></div>
+    <section id="container" class="container">
+       <h1>Javascript timed quiz</h1>
+       <p>Once the start button is clicked, the quiz starts and you will have 60 seconds to answer all 5 questions. Any question answered incorrectly will deduct 10 seconds from your remaining time. Good luck! </p>
+       <div class="control">
+           <button id="sta-btn" class="sta-btn">Begin Quiz</button>
+       </div>
     </section>
 
  <!--add questions here with timer-->
