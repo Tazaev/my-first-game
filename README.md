@@ -1,4 +1,4 @@
-# my-first-game
+# my-first-quiz
 Hello!
 This project focused on combining HTML, CSS, and Javascript in creating a fully functioning short quiz that tests the user on topics related to coding. This quiz is timed and can track the user scores on it scoreboard.
 
