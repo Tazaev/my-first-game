@@ -9,67 +9,65 @@
 </head>
 <body>
     <!--header here with title and explanation-->
+    <!--time for quiz goes here-->
     <header>
-        <div class = "scores">
-            <a id="highscore-link">View high scores </a>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
         </div>
         <div id="timer" class="timer">
-              time: 60
+            Time: 60
         </div>
     </header>
-
-
- <!-- include start button and high score-->
-    <section id="container" class="start-quiz">
-       <h1>Javascript timed quiz</h1>
-       <p>Once the start button is clicked, the quiz starts and you will have 60 seconds to answer all 5 questions. Any question answered incorrectly will deduct 10 seconds from your remaining time. Good luck! </p>
-       <div class="control">
-           <button id="sta-btn" class="sta-btn">Begin Quiz</button>
-       </div>
+<!--main section for explaining the quiz and start button-->
+    <section id="start-container" class="start-quiz">
+        <h1>Javascript Timed Quiz</h1>
+        <p>
+            Once the start button is clicked, the quiz starts and you will have 60 seconds to answer all 5 questions. Any question answered incorrectly will deduct 10 seconds from your remaining time. Good luck!
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Begin Quiz</button>
+        </div>
+    </section>
+<!--question container for quiz go here-->
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">continue</button>
+        </div>
+    </section>
+<!--place initals after quiz here-->
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+<!--section for displaying score -->
+<!--put option to restart quiz here-->
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Scoreboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
     </section>
 
- <!--add questions here with timer-->
- <section id="que-container" class="hide">
-     <h1 id="question">Questions</h1>
-     <div id="ans-btn" class="btn-grid">
-         <button class="btn">Answer 1</button>
-         <button class="btn">Answer 2</button>
-         <button class="btn">Answer 3</button>
-         <button class="btn">Answer 4</button>
-     </div>
-     <h2 id="confirm-ans" class="correct-wrong hide"></h2>
-     <div class="settings">
-         <button id="next-btn" class="next-btn hide">Next</button>
-     </div>    
- </section>
 
- <!--submit score and view highscore portion goes here-->
- <section id="scoreblock" class="hide">
-     <form id="submitform">
-         <h3>User-score</h3>
-         <label id="initals">Type initials here to save score</label>
-         <input type="text" id="initials-sect" placeholder="Type initials here" maxlength="3">
-         <button id="submit-btn">Submit</button>
-     </form>
-     
- </section>
-
-
- <!--play again?-->
- <section id="highscores">
-     <div id="high-score">
-         <h1 class="middle">Score Board</h1>
-         <div id="highscore" class="scores-list"></div>
-     </div>
-     <div class="control">
-         <button id="restart-btn">Restart quiz</button>
-         <button id="clear-btn">Clear Score</button>
-     </div>
-     
- </section>
-
-</body>
-
+<!--put js links here-->
 <script src="assets/script.js"></script> 
 <script src="assets/qu-quest.js"></script>
 </body>
